@@ -1,7 +1,8 @@
 var mail = prompt("Ciao! Inserisci la tua mail");
 var lista = [ "boole@gmail.com","boolean@gmail.com"];
+var trovato = mail === lista[i];
 for (var i = 0; i < lista.length; i++) {
-  if (mail == lista[i]){
+  if ( trovato = true){
     document.getElementById("h1").innerHTML = "Ok! La tua mail risulta salvata nel nostro database. Puoi continuare."
   }
   else{
@@ -16,7 +17,6 @@ var numero1 = Math.floor(Math.random() * 7);
 var numero2 = Math.floor(Math.random() * 7);
 //SPiegare il gioco
   var via = prompt("Ciao! Adesso facciamo un gioco. Ora verranno casualmente selezionati due numeri. Uno per me(ROSSO) e uno per te(BLU). Chi avrà il maggiore vince.Dammi il via");
-  via = via.lowerCase;
 if (via === "via") {
   //printare i due numeri
     document.getElementById("red").innerHTML = numero1 ;
